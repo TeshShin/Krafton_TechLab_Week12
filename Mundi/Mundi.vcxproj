@@ -117,9 +117,8 @@
     <PostBuildEvent>
       <Command>xcopy /y /d "$(ProjectDir)ThirdParty\lib\FBXSDK\$(Configuration)\libfbxsdk.dll" "$(OutDir)"
 xcopy /y /d "$(ProjectDir)ThirdParty\lib\Lua\lua54.dll" "$(OutDir)"
-REM Symbol Server: PDB 배포
-powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServer\IndexAndPublish.ps1" -Configuration "$(Configuration)"</Command>
-      <Message>[PostBuild] Copying dependencies and publishing symbols...</Message>
+</Command>
+      <Message>[PostBuild] Copying dependencies and 이제는 심볼서버 없음</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_StandAlone|x64'">
@@ -149,9 +148,8 @@ powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServ
     <PostBuildEvent>
       <Command>xcopy /y /d "$(ProjectDir)ThirdParty\lib\FBXSDK\Debug\libfbxsdk.dll" "$(OutDir)"
 xcopy /y /d "$(ProjectDir)ThirdParty\lib\Lua\lua54.dll" "$(OutDir)"
-REM Symbol Server: PDB 배포
-powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServer\IndexAndPublish.ps1" -Configuration "Debug_StandAlone"</Command>
-      <Message>[PostBuild] Copying dependencies and publishing symbols...</Message>
+</Command>
+      <Message>[PostBuild] Copying dependencies and 이제는 심볼서버 없음</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -185,9 +183,8 @@ powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServ
     <PostBuildEvent>
       <Command>xcopy /y /d "$(ProjectDir)ThirdParty\lib\FBXSDK\$(Configuration)\libfbxsdk.dll" "$(OutDir)"
 xcopy /y /d "$(ProjectDir)ThirdParty\lib\Lua\lua54.dll" "$(OutDir)"
-REM Symbol Server: PDB 배포
-powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServer\IndexAndPublish.ps1" -Configuration "$(Configuration)"</Command>
-      <Message>[PostBuild] Copying dependencies and publishing symbols...</Message>
+</Command>
+      <Message>[PostBuild] Copying dependencies and 이제는 심볼서버 없음</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_StandAlone|x64'">
@@ -221,9 +218,8 @@ powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServ
     <PostBuildEvent>
       <Command>xcopy /y /d "$(ProjectDir)ThirdParty\lib\FBXSDK\Release\libfbxsdk.dll" "$(OutDir)"
 xcopy /y /d "$(ProjectDir)ThirdParty\lib\Lua\lua54.dll" "$(OutDir)"
-REM Symbol Server: PDB 배포
-powershell.exe -ExecutionPolicy Bypass -File "$(ProjectDir)BuildTools\SymbolServer\IndexAndPublish.ps1" -Configuration "Release_StandAlone"</Command>
-      <Message>[PostBuild] Copying dependencies and publishing symbols...</Message>
+</Command>
+      <Message>[PostBuild] Copying dependencies and 이제는 심볼서버 없음</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
