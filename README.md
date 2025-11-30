@@ -49,3 +49,4 @@ FObjImporter::LoadObjModel(... , bIsRightHanded = true) // 기본값
 - ```..\Mundi\Data```에 FBX 파일을 넣어주세요. 폴더 통째로 넣어도 됩니다.
 ### [라이브러리 파일](https://drive.google.com/drive/folders/1qx43_dPUkTwrVW24hCGSW4p3gvrBxdmk?usp=sharing)
 - ```..\Mundi\ThirdParty```에 라이브러리 파일인 lib.zip 압축을 풀어 lib폴더를 넣어주세요.
+- python 3.14.0 이 설치되어 있어야 빌드 시 generated 파일들이 제대로 생성될 수 있습니다.
